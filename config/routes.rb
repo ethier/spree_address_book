@@ -1,3 +1,3 @@
 Spree::Core::Engine.routes.prepend do
-  resources :addresses
+#  resources :addresses
 end

@@ -2,7 +2,7 @@ module Spree
   class AddressesController < BaseController
     helper Spree::AddressesHelper
     rescue_from ActiveRecord::RecordNotFound, :with => :render_404
-    load_and_authorize_resource
+    load_and_authorize_resource :through => :current_user
 
     def new
     end
